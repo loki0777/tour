@@ -132,6 +132,7 @@ body {
 	flex: 55%;
 	background-color: #f1f1f1;
 	padding: 20px;
+	border-radius: 20px;
 
 }
 
@@ -140,7 +141,7 @@ body {
 .main {   
 	-ms-flex: 45%; /* IE10 */
 	flex: 45%;
-	background-color: #f1f1f1;
+	background-color: white;
 
 	
 
@@ -166,8 +167,9 @@ body {
 		text-align: justify;
 	/*	padding: 15px;*/
 		text-decoration: none;
- 		line-height: 1.1;
- 		font-family: "Atlas Grotesk Web",sans-serif;
+		font-size: 20px;
+		line-height: 1.5;
+ 		font-family: Elena;
 }
 
 .ff {
@@ -386,13 +388,48 @@ button {
   }
 }
 
+.
 
 
 
+.plex {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+		text-align: justify;
+
+		font-size: 20px;
+		line-height: 1.5;
+ 		font-family: Elena;
+
+
+}
+
+
+.about2 {
+	-ms-flex: 50%; /* IE10 */
+	flex: 50%;
+	background-color: white;
+	padding: 20px;
+	float: left;	
+
+}
+
+
+.about {
+	-ms-flex: 50%; /* IE10 */
+	flex: 50%;
+	background-color: #f1f1f1;
+	background-color: white;
+
+
+}
 
 .about p {
-		line-height: 1.1;
- 		font-family: "Atlas Grotesk Web",sans-serif;
+		font-size: 20px;
+		line-height: 1.5;
+ 		font-family: Elena;
 }
 
 
@@ -409,6 +446,7 @@ button {
   text-align: center;
   font-family: arial;
   border-radius: 20px;
+    margin-top: 15px;
 }
 
 .card1 {
@@ -418,6 +456,7 @@ button {
   text-align: center;
   font-family: arial;
   margin-left: 20px;
+  margin-top: 15px;
   border-radius: 20px;
   float: left;
   display: inline-grid;
