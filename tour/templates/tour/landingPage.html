@@ -14,6 +14,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
@@ -76,71 +79,25 @@
 
 
 
+<div class="plex">	
+		<div class="about2">
+			<img src="{% static 'img/as.png' %}" style="width: 250px; height: 240px;">
+		</div>
+	<div class="about">
+		<h4 style="font-size: 30px;"><b>ABOUT:</b></h4>
+		<p>I am NYOMAN ZENG. You can call me NYOMAN.</p> 
 
+		<p>Did you know, in Balinese, NYOMAN means second child?
 
+		<p>I have been a tour guide and tourist driver for more than 8 years. 
+		I enjoy meeting people from around the world and getting to know their different cultures.  I believe that the best way my guests can experience Bali is by introducing them to our culture and tradition. To make my guests feel safe, I always take the time to explain the hotels and tourist spots. I can offer a comfortable car ride with music from your home and  stories for my home.</p><br>
 
+		<p>It is my pleasure to make you feel at home in Bali. You don't have to worry about me waiting - my hours for you are flexible and friendly. If you need a photographer, I can do that for you, too. </p>
 
+		<p>This has been a passion even with my 2 years experience in a cruise ship and 10 years experience in the hotel industry. I look forward to showing you the beauty that is my home, Bali.</p><br><br>
 
-
-
-<!-- 
-<div class="row">
-	<div class="side">
-		<p class="nyoman"><b>Hi!</b> I am Nyoman Zeng, your friendliest tour guide from Bali.
-Need a comfortable car ride around Bali with stories of Rama and Sitta right at your car seat?
-PLUS I can take Instagram and Facebook-worthy photos for you!</p>
-<p>Contact me via:</p>
-<p><i style='font-size:14px' class='fas'>&#xf3fa; <a href="" style='font-family: Elena; font-size:14px'>6281337355072</a></i></p>
- <p><i style='font-family: font-size:14px' class='fas'>&#xf0e0;<a href="" style='font-size:14px'> irinyoman0@gmail.com</a></i>
-</p>
-<p><i style="font-size:14px" class="fa">&#xf230;<a href="" style="font-size:14px"><b> https://www.facebook.com/BaliTours-by-Nyoman-Zeng</b></a></i>
-</p>
 
 	</div>
-
- <div class="main">
-    <div class="gallery one">
-    <a target="_blank" href="img_5terre.jpg">
-        <img src="{% static 'img/ima.png' %}" alt="Cinque Terre" style="width: 250px; height: 240px;">
-    </a>
- </div>
-   
-
-    <div class="gallery two">
-    <a target="_blank" href="img_5terre.jpg">
-        <img src="{% static 'img/second.jpg' %}" alt="Cinque Terre" style="width: 250px; height: 240px;">
-    </a>
- </div>
-  
-</div>
-] -->
-<div class="plex">
-	
-<div class="about2">
-<img src="{% static 'img/as.png' %}" style="width: 250px; height: 240px;">
-</div>
-
-	<div class="about">
-
-	<h4 style="font-size: 30px;"><b>ABOUT:</b></h4>
-
-	<p>I am NYOMAN ZENG. You can call me NYOMAN.</p> 
-
-<p>Did you know, in Balinese, NYOMAN means second child?
-
-<p>I have been a tour guide and tourist driver for more than 8 years. 
-I enjoy meeting people from around the world and getting to know their different cultures.  I believe that the best way my guests can experience Bali is by introducing them to our culture and tradition. To make my guests feel safe, I always take the time to explain the hotels and tourist spots. I can offer a comfortable car ride with music from your home and  stories for my home.</p><br>
-
-<p>It is my pleasure to make you feel at home in Bali. You don't have to worry about me waiting - my hours for you are flexible and friendly. If you need a photographer, I can do that for you, too. </p>
-
-<p>This has been a passion even with my 2 years experience in a cruise ship and 10 years experience in the hotel industry. I look forward to showing you the beauty that is my home, Bali.</p><br><br>
-
-
-
-</div>
-
-
-
 </div>
 
 
@@ -148,30 +105,54 @@ I enjoy meeting people from around the world and getting to know their different
 
 <div class="container-fluid">
 			<h3 style="text-align: center; font-size: 30px;"><b>GALLERY</b></h3>
-	<div class="row">
+	<div class="row rowt">
 		<div class="col-sm-3">
-			<img src="{% static 'img/Lempuyangtemple.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded">
+			<div class="cardholder">
+        <div class="card">
+					<img src="{% static 'img/Lempuyangtemple.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded">
+					<p class="desc">texthere.com</p>
+				</div>
+			</div>
 		</div>
 
 
 		<div class="col-sm-3">
-			<img src="{% static 'img/image2.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded"/>
+			<div class="cardholder">
+        <div class="card">
+					<img src="{% static 'img/image2.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded"/>
+					<p class="desc">texthere.com</p>
+				</div>
+			</div>
 		</div>
 
 
 		<div class="col-sm-3">
-			<img src="{% static 'img/image1.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded"/>
+			<div class="cardholder">
+        <div class="card">
+					<img src="{% static 'img/image1.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded"/>
+					<p class="desc">texthere.com</p>
+				</div>
+			</div>
 		</div>
 
 
 		<div class="col-sm-3">
-			<img src="{% static 'img/image4.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded" />
+			<div class="cardholder">
+        <div class="card">
+					<img src="{% static 'img/image4.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded" />
+					<p class="desc">texthere.com</p>
+				</div>
+      </div>
 		</div>
+
 	</div>
 </div>
 
 
 
+<br>
+<br>
+<br>
 
 
 
@@ -196,25 +177,56 @@ I enjoy meeting people from around the world and getting to know their different
 					<a href="#">Hotel Inquiry</a>
 					|
 					<a href="#">Car Services</a>
-				</p>
+		
 
+				</p>
 
   </div>
 
 
 
-<button class="open-button" onclick="openForm()">Message me</button>
 
-<div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Get a Guide</h1>
 
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
+<button class="open-button" onclick="openForm()">Reviews</button>
 
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
+
+<div class="chat-popup" id="myForm" style="overflow:visible">
+
+
+	<h4>Feedbacks and Recommendations</h4>
+<div class="ayprem">
+	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkrystlejoy.chavez%2Fposts%2F2438578466180429&width=500" width="280px" height="256" style="border:none;overflow-y:scroll;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<br><br>
+
+	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fxiloooveespink%2Fposts%2F2110117969001134%3A0&width=500" width="280px" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+<br><br>
+	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fyangkumi%2Fposts%2F10211271898753509&width=500" width="280px" height="737" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+<br><br>
+	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkaylene.e.schultz%2Fposts%2F10219193473778619&width=500" width="280px" height="584" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+<br><br>
+	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Frufino.eva%2Fposts%2F2360270434067557&width=500" width="280px" height="681" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+<br><br>
+	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmantas.dulevicius.7%2Fposts%2F1854552587899649%3A0&width=500" width="280px" height="455" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+<br><br>
+	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmactimbal09%2Fposts%2F2215221545161302%3A0&width=500" width="280px" height="430" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+<br><br>
+	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjennifer.limayo%2Fposts%2F2478760015490040&width=500" width="280px" height="534" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+<br><br>	
+<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+</div>
+
+
+
+
+  
+
 </div>
 
   <script>
@@ -226,6 +238,13 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+
+
+
 
 
 

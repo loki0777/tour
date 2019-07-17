@@ -7,7 +7,9 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 
- 
+ 	overflow-y: auto;
+ 	overflow: scroll;
+	
 
 }
 
@@ -292,10 +294,7 @@ button {
 
 
 /* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
+
 
 /* Create four equal columns that floats next to each other */
 .column {
@@ -329,8 +328,7 @@ button {
     width: 100%;
   }
 }
-
-.
+			
 
 
 
@@ -375,51 +373,50 @@ button {
 }
 
 
-
-
-
-
-
-
+/*gallery images 3D style*/
+.cardholder {
+  margin-top: 50px;
+          perspective: 600px;
+}
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  border-radius: 20px;
-    margin-top: 15px;
+  width: 300px;
+  height: 300px;
+  background-color: transparent;
+          transform: rotateY(50deg);
+  box-shadow: -6px 5px 13px 2px rgba(0, 0, 0, 0.25);
+	transition: all 1s ease;
+  color: transparent;
+}
+.card:hover {
+  width: 300px;
+  height: 300px;
+  background-color: transparent;
+          transform: rotateY(0deg);
+  box-shadow: 0px 0px 36px 2px rgba(0, 0, 0, 0.25);
+  color: black;
+}
+.card:hover p {
+  background-color: white;
 }
 
-.card1 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  margin-left: 20px;
-  margin-top: 15px;
-  border-radius: 20px;
-  float: left;
-  display: inline-grid;
+p.desc {
+  z-index:999;
+  position: absolute;
+  top: 10px;
+  padding: 10px;
 }
-
-div.card1 img {
-		object-fit: cover;
-  border-radius: 20px;s
-}
-div.card img {
-		object-fit: cover;
-	width: 280px;
-  border-radius: 20px;
-
+p.desc:hover {
 }
 
 
-.title {
-  color: grey;
-  font-size: 18px;
+
+.rowt {
+	/*background: linear-gradient(to left, #ffc3a0, #FFAFBD );*/
+
+	height: 400px;
 }
+
+
 
 
 
@@ -433,8 +430,27 @@ button:hover, a:hover {
   opacity: 0.7;
 }
 
+iframe {
+	overflow-y: scroll;
+}
+
+.ayprem {
+	overflow: scroll;
+	background-color: white;
+	height: 500px;
+	border-radius: 20px;
+	width: 330px;
+	padding: 10px;
 
 
+}
+
+/* Handle */
+
+
+h4{
+	text-align: center;
+}
 
 
 
@@ -443,7 +459,7 @@ button:hover, a:hover {
 .open-button {
   background-color: #651E40;
   color: white;
-  padding: 16px 20px;
+  /*padding: 16px 20px;*/
   border: none;
   cursor: pointer;
   opacity: 0.8;
@@ -452,7 +468,10 @@ button:hover, a:hover {
   right: 0;
   width: 160px;
   border-radius: 14px;
+
+
 }
+
 
 /* The popup chat - hidden by default */
 .chat-popup {
@@ -460,59 +479,21 @@ button:hover, a:hover {
   position: fixed;
   bottom: 0;
   right: 15px;
-  border: 3px solid #f1f1f1;
+  /*border: 3px solid #f1f1f1;*/
   z-index: 9;
+  background-color: white;
+  border-radius: 20px;
+  overflow: scroll;
 }
 
 /* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
+
+
+
+.open-button.chat-popup.scorwl {
+	background-color: blue;
+	overflow: scroll:
 }
-
-/* Full-width textarea */
-.form-container textarea {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-  resize: none;
-  min-height: 200px;
-}
-
-/* When the textarea gets focus, do something */
-.form-container textarea:focus {
-  background-color: white;
-  outline: none;
-}
-
-/* Set a style for the submit/send button */
-.form-container .btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: #651E40;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-
-
-
-
 
 
 
