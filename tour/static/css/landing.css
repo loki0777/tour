@@ -294,7 +294,10 @@ button {
 
 
 /* Add padding BETWEEN each column */
-
+.row,
+.row > .column {
+  padding: 8px;
+}
 
 /* Create four equal columns that floats next to each other */
 .column {
@@ -333,10 +336,7 @@ button {
 
 
 .plex {
-	display: -ms-flexbox; /* IE10 */
-	display: flex;
-	-ms-flex-wrap: wrap; /* IE10 */
-	flex-wrap: wrap;
+
 		text-align: justify;
 
 		font-size: 20px;
@@ -346,12 +346,9 @@ button {
 
 }
 
-
 .about2 {
-	-ms-flex: 50%; /* IE10 */
-	flex: 50%;
+
 	background-color: white;
-	padding: 20px;
 	float: left;	
 
 }
@@ -482,7 +479,6 @@ h4{
   /*border: 3px solid #f1f1f1;*/
   z-index: 9;
   background-color: white;
-  border-radius: 20px;
   overflow: scroll;
 }
 
