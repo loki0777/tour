@@ -11,9 +11,18 @@
 <link rel="stylesheet" href="{% static 'css/landing.css' %}">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="{% static 'css/component.css' %}">
+
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+<!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script> -->
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 
 
 
@@ -22,6 +31,8 @@
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
 </head>
 <body>
@@ -48,17 +59,22 @@
 
 
 
+
+
+
+
+
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-sm-8" style="font-family: Elena; font-size: 20px; line-height: 1.2;" >
+		<div class="col-sm-8" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 1.2;" >
 			<div style=" background-color: #f1f1f1; border-radius: 20px; padding: 15px; text-align: center; padding-bottom: 10px;">
-				<p style="line-height: 0.9; text-indent: 26px;"><b>Hi!</b> I am Nyoman Zeng, your friendliest tour guide from Bali.</p>
+				<p style="line-height: 0.9;"><b>Hi!</b> I am Nyoman Zeng, your friendliest tour guide from Bali.</p>
 				<p>Need a comfortable car ride around Bali with stories of Rama and Sitta right at your car seat?
 					PLUS I can take Instagram and Facebook-worthy photos for you!</p>
 				<p>Contact me via:</p>
-				<p><i class='fas'>&#xf3fa; <a href="" style="font-size: 16px">6281337355072</a></i>
+				<p><i class='fas'>&#xf3fa; <a href="" style="font-size: 16px"><b>6281337355072</b></a></i>
 				</p>
-				<p><i class='fas'>&#xf0e0;<a href="" style='font-size:16px'> irinyoman0@gmail.com</a></i>
+				<p><i class='fas'>&#xf0e0;<a href="" style='font-size:16px'><b> irinyoman0@gmail.com</b></a></i>
 				</p>
 				<p><i class="fa">&#xf230;<a href="" style="font-size:16px"><b> https://www.facebook.com/BaliTours-by-Nyoman-Zeng</b></a></i>
 				</p>
@@ -79,27 +95,63 @@
 
 
 
+
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="main">Reviews</a>
+  <a href="#" id="blog">Blog</a>
+  <a href="#" id="projects">Projects</a>
+  <a href="#" id="contact">Contact</a>
+</div>
+
+<!-- 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div> -->
+
+<!-- <div id="main">
+  <h2>Sidenav Push Example</h2>
+  <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div> -->
+
+
+
 <div class="plex">	
 		<div class="about2">
 			<img src="{% static 'img/as.png' %}" style="width: 250px; height: 240px;">
 		</div>
 	<div class="about">
 		<h2 style="font-size: 30px;"><b>ABOUT:</b></h2>
-		<p>I am NYOMAN ZENG. You can call me NYOMAN.</p> 
+		<p>I am NYOMAN ZENG. You can call me NYOMAN.
 
-		<p>Did you know, in Balinese, NYOMAN means second child?
+		<br>Did you know, in Balinese, NYOMAN means second child?<br>
 
-		<p>I have been a tour guide and tourist driver for more than 8 years. 
-		I enjoy meeting people from around the world and getting to know their different cultures.  I believe that the best way my guests can experience Bali is by introducing them to our culture and tradition. To make my guests feel safe, I always take the time to explain the hotels and tourist spots. I can offer a comfortable car ride with music from your home and  stories for my home.</p><br>
+		I have been a tour guide and tourist driver for more than 8 years. 
+		I enjoy meeting people from around the world and getting to know their different cultures.  I believe that the best way my guests can experience Bali is by introducing them to our culture and tradition. To make my guests feel safe, I always take the time to explain the hotels and tourist spots. I can offer a comfortable car ride with music from your home and  stories for my home.</p>
 
-		<p>It is my pleasure to make you feel at home in Bali. You don't have to worry about me waiting - my hours for you are flexible and friendly. If you need a photographer, I can do that for you, too. </p>
+		<p>It is my pleasure to make you feel at home in Bali. You don't have to worry about me waiting - my hours for you are flexible and friendly. If you need a photographer, I can do that for you, too.
 
-		<p>This has been a passion even with my 2 years experience in a cruise ship and 10 years experience in the hotel industry. I look forward to showing you the beauty that is my home, Bali.</p><br><br>
+		This has been a passion even with my 2 years experience in a cruise ship and 10 years experience in the hotel industry. I look forward to showing you the beauty that is my home, Bali.</p><br><br>
 
 
 	</div>
+
 </div>
 
+
+
+
+
+<div class="blank">
+	
+<p>                   </p>
+
+
+</div>
 
 
 
@@ -166,10 +218,134 @@
 
 
 
+
+
+
+
+
+
+
+<div class="fb-page" data-href="https://web.facebook.com/Bali-Tours-by-Nyoman-Zeng-764558586993366/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://web.facebook.com/Bali-Tours-by-Nyoman-Zeng-764558586993366/" class="fb-xfbml-parse-ignore"><a href="https://web.facebook.com/Bali-Tours-by-Nyoman-Zeng-764558586993366/">Bali Tours by Nyoman Zeng</a></blockquote></div>
+
+
+<div class="fb-page" 
+  data-href="https://www.facebook.com/facebook"
+  data-width="380" 
+  data-hide-cover="false"
+  data-show-facepile="false"></div>
+
+
+
+<!-- <div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-6">
+			<figure>
+      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fxiloooveespink%2Fposts%2F2110117969001134%3A0&width=500" width="500" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      <figcaption>
+        Julie's Rabbit Ears
+      </figcaption>
+    </figure>
+		</div>
+		<div class="col-sm-6">
+			<figure>
+      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjennifer.limayo%2Fposts%2F2478760015490040&width=500" width="500" height="534" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      <figcaption>
+        Julie's Rabbit Ears
+      </figcaption>
+    </figure>
+		</div>
+	</div>
+	
+
+
+
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+<section id="photostack-3" class="oo">
+		<h1 class="gf">Reviews and Recommendations</h1>
+		<br>
+		<br>
+    <div>
+    	<div class="container-fluid">
+    	<div class="row as">
+    		<div class="col-sm-3">
+    			 <figure data-dummy>
+            <a href="#" class="photostack">
+            	<iframe src="https://web.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fkrystlejoy.chavez%2Fposts%2F2438578466180429&width=500" width="500" height="256" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </a>
+
+            	<br>
+
+            	<a href="#" class="photostack">
+            	<iframe src="https://web.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1241730945988049%26id%3D100004534666400&width=500" width="500" height="237" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </a>
+
+            <br>
+
+            <a href="#" class="">
+            <iframe src="https://web.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fzeny.santos.18%2Fposts%2F2653232771357624&width=500" width="500" height="218" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </a>
+
+
+        </figure>
+    		</div>
+    		
+
+			<div class="col-sm-3">
+    		<figure data-dummy>
+            <a href="#" class="">
+            	
+            </a>
+            	
+        </figure>
+    	</div>
+
+    		<div class="col-sm-6">
+    	<div class="elfsight-app-3dde2e16-1ce3-40db-ad80-b97e0a444afa"></div>
+    		</div>
+
+    	</div>
+
+       
+
+    	</div>
+</div>
+       
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- FOOTER START -->
 <div class="footer">
 
-   <h3 class="etch" style="font-size: 30px;"><b>Services:</b></h3>
+   <h3 class="etch" style="font-size: 30px; font-weight: bold;">Services:</h3>
 
 				<p class="footer-links">
 					<a href="#">Tour Guide</a>
@@ -193,7 +369,15 @@
 <div class="chat-popup" id="myForm" style="overflow:visible">
 
 
-	<h4>Feedbacks and Recommendations</h4>
+	<h4>Feedbacks and Recommendations 
+		<!-- &#x274C; -->
+		<!-- <i style="font-size:24px" class="fa">&#xf00d;</i> -->
+		<button type="button" class="close" aria-label="Close" onclick="closeForm()">
+  <span aria-hidden="true">&#x274C;</span>
+</button>
+	</h4>
+
+
 <div class="ayprem">
 	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkrystlejoy.chavez%2Fposts%2F2438578466180429&width=500" width="280px" height="256" style="border:none;overflow-y:scroll;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 <br><br>
@@ -246,13 +430,44 @@ function closeForm() {
 
 
 
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 
 
   
 
 
 
+		<script src="js/classie.js"></script>
+		<script src="js/photostack.js"></script>
+		<script>
+			// [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
+			
+			new Photostack( document.getElementById( 'photostack-1' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+			new Photostack( document.getElementById( 'photostack-2' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+			new Photostack( document.getElementById( 'photostack-3' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+		</script>
 
 
 
