@@ -7,3 +7,6 @@ from django.http import HttpResponse
 
 def landingPage(request):
 	return render(request, 'tour/landingPage.html', {})
+
+def grid(request):
+	return render(request, 'tour/grid.html', {})

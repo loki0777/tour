@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tour Bali</title>
 
-
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="{% static 'css/landing.css' %}">
 
@@ -36,22 +36,23 @@
 
 </head>
 <body>
-
-<div class="header">
-	<div class="bg-text typewriter">
-	<h1>TOUR BALI</h1>
-	<p class="ny" style="font-size: 15px;">With NYOMAN ZENG</p>
-</div>
+<div id="main">
+<div class="CONTAINER">
+<div class="header" style="text-align: center;">
+	<div class="responsive bg-text typewriter">
+		<h1>TOUR BALI</h1>
+		<p class="ny" style="font-size: 15px;">With NYOMAN ZENG</p>
+	</div>
 </div>
 
 
 <div class="navbar pp">
 	<a href="#" class="active">HOME</a>
-	<a href="#">ABOUT</a>
+	<a href="{% static 'grid' %}">ABOUT</a>
 	<a href="#">GALLERY</a>
 	<a href="#">SERVICES</a>
 	
-	<a href="" class="right phone"><i style='font-size:18px' class='fas'>&#xf3fa;</i></a>
+	<a href="" class="right phone"><i style='font-size:18px' class='fas t'>&#xf3fa;</i></a>
 	<a href="" class="right email"><i style='font-size:20px' class='fas'>&#xf0e0;</i></a>
 	<a href="" class="right facebook"><i style="font-size:20px" class="fa">&#xf230;</i></a>
 </div>
@@ -63,21 +64,57 @@
 
 
 
+<div id="mySidenav" class="sidenav">
+	
+       			<div class="close-con">
+           			 <h3 class="sideTitle"> RECOMMENDATIONS AND REVIEWS</h3>
+           			 <a href="javascript:void(0)" class="closebtn cons" onclick="closeNav()">&times;</a>
+            		 <br>
+        		</div>
+    
+
+		<div class="responsive wrapper">
+  		<div class="responsive h_iframe">
+
+
+  			<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkheinz.szaki%2Fposts%2F3593704237321941&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe><br>
+
+			<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkaylene.e.schultz%2Fposts%2F10219193473778619&width=500" width="320" height="584" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe><br>
+
+	  		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fyangkumi%2Fposts%2F10211271898753509&width=500" width="320" height="737" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe><br>
+
+	  		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Frufino.eva%2Fposts%2F2360270434067557&width=500" width="320" height="681" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe><br>
+
+	  		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjennifer.limayo%2Fposts%2F2478760015490040&width=500" width="320" height="534" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+
+		</div>
+		</div>
+	 
+</div>
+
+
+  
+  <!-- <span style="font-size:30px;cursor:pointer; font-family: 'Montserrat'; color: black;" onclick="openNav()" class="mobb">&#9776; Guest reviews</span>
+ -->
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-sm-8" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 1.2;" >
-			<div style=" background-color: #f1f1f1; border-radius: 20px; padding: 15px; text-align: center; padding-bottom: 10px;">
-				<p style="line-height: 0.9;"><b>Hi!</b> I am Nyoman Zeng, your friendliest tour guide from Bali.</p>
-				<p>Need a comfortable car ride around Bali with stories of Rama and Sitta right at your car seat?
+		<div class="col-sm-8" style="font-family: Lato, Helvetica, Verdana, sans-serif;  font-size: 20px; line-height: 1.2;" >
+				<span style="font-size:30px;cursor:pointer; font-family: Lato, Helvetica, Verdana, sans-serif; color: black;" onclick="openNav()" class="mobb">&#9776; Guest reviews</span>
+					<br><br>
+
+			<div style="font-family: Lato, Helvetica, Verdana, sans-serif; background-color: #f1f1f1; border-radius: 20px; padding: 15px; text-align: center; padding-bottom: 10px; ">
+				<p style="line-height: 1.4;">Hi! I am Nyoman Zeng, your friendliest tour guide from Bali.<br>
+				Need a comfortable car ride around Bali with stories of Rama and Sitta right at your car seat?
 					PLUS I can take Instagram and Facebook-worthy photos for you!</p>
-				<p>Contact me via:</p>
-				<p><i class='fas'>&#xf3fa; <a href="" style="font-size: 16px"><b>6281337355072</b></a></i>
-				</p>
-				<p><i class='fas'>&#xf0e0;<a href="" style='font-size:16px'><b> irinyoman0@gmail.com</b></a></i>
-				</p>
-				<p><i class="fa">&#xf230;<a href="" style="font-size:16px"><b> https://www.facebook.com/BaliTours-by-Nyoman-Zeng</b></a></i>
-				</p>
+				<p>Contact me via:
+					<p><i style='font-size:22px' class='fas' >&#xf3fa;</i><a href="" class="B"> 6281337355072</a></p>
+
+					<p><i style='font-size:20px' class='fas'>&#xf0e0;</i><a href="" class="B"> irinyoman0@gmail.com</a> </p>
+
+					<p><i style="font-size:23px" class="fa">&#xf230;</i><a href="" class="B"> https://www.facebook.com/BaliTours-by-Nyoman-Zeng</a></p></p>
+
 			</div>
 		</div>
 
@@ -86,49 +123,22 @@
 			</div>
 
 			<div class="col-sm-2" style="text-align: right; padding-bottom: 10px padding-left: 5px; padding-right: 5px">
-				<img src="{% static 'img/second.jpg' %}" style="width: 100%; height: 240px; object-fit: cover; border-radius: 20px">
+				<img src="{% static 'img/zzz.jpg' %}" style="width: 100%; height: 240px; object-fit: cover; border-radius: 20px">
 			</div>
 
 	</div>
 </div>
 
 
-
-
-
-<div id="mySidenav" class="sidenav">
-  <a href="#" id="main">Reviews</a>
-  <a href="#" id="blog">Blog</a>
-  <a href="#" id="projects">Projects</a>
-  <a href="#" id="contact">Contact</a>
-</div>
-
-<!-- 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div> -->
-
-<!-- <div id="main">
-  <h2>Sidenav Push Example</h2>
-  <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-</div> -->
-
-
-
 <div class="plex">	
 		<div class="about2">
-			<img src="{% static 'img/as.png' %}" style="width: 250px; height: 240px;">
+			<img src="{% static 'img/first.jpg' %}" style="width: 190px; height: 220px; border-radius: 20px;" >
 		</div>
 	<div class="about">
-		<h2 style="font-size: 30px;"><b>ABOUT:</b></h2>
+		<h2 style="font-size: 30px; font-family: Varela Round; "><b>ABOUT:</b></h2>
 		<p>I am NYOMAN ZENG. You can call me NYOMAN.
 
-		<br>Did you know, in Balinese, NYOMAN means second child?<br>
+		<br>Did you know, in Balinese, NYOMAN means third child?<br>
 
 		I have been a tour guide and tourist driver for more than 8 years. 
 		I enjoy meeting people from around the world and getting to know their different cultures.  I believe that the best way my guests can experience Bali is by introducing them to our culture and tradition. To make my guests feel safe, I always take the time to explain the hotels and tourist spots. I can offer a comfortable car ride with music from your home and  stories for my home.</p>
@@ -144,8 +154,6 @@
 
 
 
-
-
 <div class="blank">
 	
 <p>                   </p>
@@ -155,174 +163,175 @@
 
 
 
+
+
+
+<!-- Gallery -->
+<!-- 
 <div class="container-fluid">
-			<h3 style="text-align: center; font-size: 30px;"><b>GALLERY</b></h3>
-	<div class="row rowt">
-		<div class="col-sm-3">
-			<div class="cardholder">
-        <div class="card">
-					<img src="{% static 'img/Lempuyangtemple.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded">
-					<p class="desc">texthere.com</p>
-				</div>
-			</div>
-		</div>
+    <h3 style="text-align: center; font-size: 30px;"><b>GALLERY</b></h3>
+    <div class="row rowt">
+        <div class="col-sm-3">
+            <div class="cardholder">
+                <div class="card">
+                    <img src="{% static 'img/Lempuyangtemple.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded">
+                    <p class="desc">texthere.com</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-sm-3">
+            <div class="cardholder">
+                <div class="card">
+                    <img src="{% static 'img/image2.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded" />
+                    <p class="desc">texthere.com</p>
+                </div>
+            </div>
+        </div>
 
-		<div class="col-sm-3">
-			<div class="cardholder">
-        <div class="card">
-					<img src="{% static 'img/image2.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded"/>
-					<p class="desc">texthere.com</p>
-				</div>
-			</div>
-		</div>
+        <div class="col-sm-3">
+            <div class="cardholder">
+                <div class="card">
+                    <img src="{% static 'img/image1.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded" />
+                    <p class="desc">texthere.com</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-sm-3">
+            <div class="cardholder">
+                <div class="card">
+                    <img src="{% static 'img/image4.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded" />
+                    <p class="desc">texthere.com</p>
+                </div>
+            </div>
+        </div>
 
-		<div class="col-sm-3">
-			<div class="cardholder">
-        <div class="card">
-					<img src="{% static 'img/image1.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded"/>
-					<p class="desc">texthere.com</p>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="col-sm-3">
-			<div class="cardholder">
-        <div class="card">
-					<img src="{% static 'img/image4.jpg' %}" style="width:100%; height: 255px; object-fit: cover; padding-top: 20px;" class="img-rounded" />
-					<p class="desc">texthere.com</p>
-				</div>
-      </div>
-		</div>
-
-	</div>
+    </div>
 </div>
 
 
 
-<br>
-<br>
-<br>
-
-
-
-
-<div class="blank">
-	
-<p>                   </p>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="fb-page" data-href="https://web.facebook.com/Bali-Tours-by-Nyoman-Zeng-764558586993366/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://web.facebook.com/Bali-Tours-by-Nyoman-Zeng-764558586993366/" class="fb-xfbml-parse-ignore"><a href="https://web.facebook.com/Bali-Tours-by-Nyoman-Zeng-764558586993366/">Bali Tours by Nyoman Zeng</a></blockquote></div>
-
-
-<div class="fb-page" 
-  data-href="https://www.facebook.com/facebook"
-  data-width="380" 
-  data-hide-cover="false"
-  data-show-facepile="false"></div>
-
-
-
-<!-- <div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-6">
-			<figure>
-      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fxiloooveespink%2Fposts%2F2110117969001134%3A0&width=500" width="500" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-      <figcaption>
-        Julie's Rabbit Ears
-      </figcaption>
-    </figure>
-		</div>
-		<div class="col-sm-6">
-			<figure>
-      <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjennifer.limayo%2Fposts%2F2478760015490040&width=500" width="500" height="534" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-      <figcaption>
-        Julie's Rabbit Ears
-      </figcaption>
-    </figure>
-		</div>
-	</div>
-	
-
-
-
-</div>
  -->
 
 
 
 
+  <h3 style="text-align: center; font-size: 30px;"><b>GALLERY</b></h3>
 
-
-
-
-
-<section id="photostack-3" class="oo">
-		<h1 class="gf">Reviews and Recommendations</h1>
-		<br>
-		<br>
-    <div>
-    	<div class="container-fluid">
-    	<div class="row as">
-    		<div class="col-sm-3">
-    			 <figure data-dummy>
-            <a href="#" class="photostack">
-            	<iframe src="https://web.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fkrystlejoy.chavez%2Fposts%2F2438578466180429&width=500" width="500" height="256" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-            </a>
-
-            	<br>
-
-            	<a href="#" class="photostack">
-            	<iframe src="https://web.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1241730945988049%26id%3D100004534666400&width=500" width="500" height="237" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-            </a>
-
-            <br>
-
-            <a href="#" class="">
-            <iframe src="https://web.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fzeny.santos.18%2Fposts%2F2653232771357624&width=500" width="500" height="218" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-            </a>
-
-
-        </figure>
-    		</div>
-    		
-
-			<div class="col-sm-3">
-    		<figure data-dummy>
-            <a href="#" class="">
-            	
-            </a>
-            	
-        </figure>
-    	</div>
-
-    		<div class="col-sm-6">
-    	<div class="elfsight-app-3dde2e16-1ce3-40db-ad80-b97e0a444afa"></div>
-    		</div>
-
-    	</div>
-
-       
-
-    	</div>
+<div class="cards-wrapper">
+  <div class="card-wrapper">
+    <div class="card-1 card-object card-object-hf"><a class="face front" href="#">
+        <div class="title-wrapper">
+          <div class="title">BALI</div>
+          <div class="subtitle">felis hairyus</div>
+        </div></a><a class="face back" href="#">
+        <div class="img-wrapper">
+          <div class="avatar"></div>
+        </div>
+        <div class="info-wrapper">
+          <div class="info-title">NYOMAN ZENG</div>
+          <ul class="info-content">
+            <li class="info-content-item">Age <span>6 years</span></li>
+            <li class="info-content-item">Length <span>46cm</span></li>
+            <li class="info-content-item">Weight <span>4kg</span></li>
+          </ul>
+        </div></a></div>
+  </div>
+  <div class="card-wrapper">
+    <div class="card-2 card-object card-object-hf"><a class="face front" href="#">
+        <div class="title-wrapper">
+          <div class="title">BALI</div>
+          <div class="subtitle">felis catus</div>
+        </div></a><a class="face back" href="#">
+        <div class="img-wrapper">
+          <div class="avatar"></div>
+        </div>
+        <div class="info-wrapper">
+          <div class="info-title">NYOMAN ZENG</div>
+          <ul class="info-content">
+            <li class="info-content-item">Age <span>7 years</span></li>
+            <li class="info-content-item">Length <span>42cm</span></li>
+            <li class="info-content-item">Weight <span>3.8kg</span></li>
+          </ul>
+        </div></a></div>
+  </div>
+  <div class="card-wrapper">
+    <div class="card-3 card-object card-object-hf"><a class="face front" href="#">
+        <div class="title-wrapper">
+          <div class="title">BALI</div>
+          <div class="subtitle">felix pumus</div>
+        </div></a><a class="face back" href="#">
+        <div class="img-wrapper">
+          <div class="avatar"></div>
+        </div>
+        <div class="info-wrapper">
+          <div class="info-title">NYOMAN ZENG</div>
+          <ul class="info-content">
+            <li class="info-content-item">Age <span>5 years</span></li>
+            <li class="info-content-item">Length <span>50cm</span></li>
+            <li class="info-content-item">Weight <span>5.2kg</span></li>
+          </ul>
+        </div></a></div>
+  </div>
 </div>
-       
 
-    </div>
-</section>
+<div class="cards-wrapper">
+  <div class="card-wrapper">
+    <div class="card-4 card-object card-object-hf"><a class="face front" href="#">
+        <div class="title-wrapper">
+          <div class="title">BALI</div>
+          <div class="subtitle">felis hairyus</div>
+        </div></a><a class="face back" href="#">
+        <div class="img-wrapper">
+          <div class="avatar"></div>
+        </div>
+        <div class="info-wrapper">
+          <div class="info-title">NYOMAN ZENG</div>
+          <ul class="info-content">
+            <li class="info-content-item">Age <span>6 years</span></li>
+            <li class="info-content-item">Length <span>46cm</span></li>
+            <li class="info-content-item">Weight <span>4kg</span></li>
+          </ul>
+        </div></a></div>
+  </div>
+  <div class="card-wrapper">
+    <div class="card-5 card-object card-object-hf"><a class="face front" href="#">
+        <div class="title-wrapper">
+          <div class="title">BALI</div>
+          <div class="subtitle">felis catus</div>
+        </div></a><a class="face back" href="#">
+        <div class="img-wrapper">
+          <div class="avatar"></div>
+        </div>
+        <div class="info-wrapper">
+          <div class="info-title">NYOMAN ZENG</div>
+          <ul class="info-content">
+            <li class="info-content-item">Age <span>7 years</span></li>
+            <li class="info-content-item">Length <span>42cm</span></li>
+            <li class="info-content-item">Weight <span>3.8kg</span></li>
+          </ul>
+        </div></a></div>
+  </div>
+  <div class="card-wrapper">
+    <div class="card-6 card-object card-object-hf"><a class="face front" href="#">
+        <div class="title-wrapper">
+          <div class="title">BALI</div>
+          <div class="subtitle">felix pumus</div>
+        </div></a><a class="face back" href="#">
+        <div class="img-wrapper">
+          <div class="avatar"></div>
+        </div>
+        <div class="info-wrapper">
+          <div class="info-title">NYOMAN ZENG</div>
+          <ul class="info-content">
+            <li class="info-content-item">Age <span>5 years</span></li>
+            <li class="info-content-item">Length <span>50cm</span></li>
+            <li class="info-content-item">Weight <span>5.2kg</span></li>
+          </ul>
+        </div></a></div>
+  </div>
+</div>
 
 
 
@@ -336,8 +345,12 @@
 
 
 
+<div class="blank">
+	
+<p>                   </p>
 
 
+</div>
 
 
 
@@ -359,27 +372,26 @@
 
   </div>
 
+</div> <!-- sidenav -->
 
 
 
-
-<button class="open-button" onclick="openForm()">Reviews</button>
+<!-- <button class="open-button" onclick="openForm()">Reviews</button>
 
 
 <div class="chat-popup" id="myForm" style="overflow:visible">
 
 
 	<h4>Feedbacks and Recommendations 
-		<!-- &#x274C; -->
-		<!-- <i style="font-size:24px" class="fa">&#xf00d;</i> -->
+		<i style="font-size:24px" class="fa">&#xf00d;</i>
 		<button type="button" class="close" aria-label="Close" onclick="closeForm()">
   <span aria-hidden="true">&#x274C;</span>
-</button>
 	</h4>
+</button> -->
 
-
+<!-- 
 <div class="ayprem">
-	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkrystlejoy.chavez%2Fposts%2F2438578466180429&width=500" width="280px" height="256" style="border:none;overflow-y:scroll;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkrystlejoy.chavez%2Fposts%2F2438578466180429&width=500" width="500px" height="256" style="border:none;overflow-y:scroll;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 <br><br>
 
 	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fxiloooveespink%2Fposts%2F2110117969001134%3A0&width=500" width="280px" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
@@ -404,8 +416,7 @@
 
 <br><br>	
 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-</div>
-
+</div> -->
 
 
 
@@ -418,27 +429,105 @@ function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
 
+// openForm()
+
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
 
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
 
 
 
 
+
+
+
+
+
+
+
+
+<script> var $cards = $('.card-object'),
+    $faceButtons = $('.face');
+
+$faceButtons.on('click', flipCard);
+
+function flipCard(event) {
+  event.preventDefault();
+  
+  var $btnFace = $(this),
+      $card = $btnFace.parent('.card-object');
+  
+  if( $card.hasClass('flip-in') ) {
+    closeCards();
+  } else {
+    closeCards();
+    openCard($card);
+  }
+  
+}
+
+function closeCards() {
+  $cards.each( function() {
+    $(this)
+      .filter('.flip-in')
+      .removeClass('flip-in')
+      .queue( function() {
+        // Force reflow hack
+        var reflow = this.offsetHeight;
+        $(this)
+          .addClass('flip-out')
+          .dequeue();
+      })
+      
+  });
+}
+
+function openCard($card) {
+  $card
+    .removeClass('flip-out')
+    .queue( function() {
+      // Force reflow hack
+      var reflow = this.offsetHeight;
+      $(this)
+        .addClass('flip-in')
+        .dequeue();
+    });
+    
+}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- sidenav -->
 <script>
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("mySidenav").style.width = "334px";
+  document.getElementById("main").style.marginRight = "334px";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("main").style.marginRight= "0";
 }
 </script>
 
@@ -473,7 +562,7 @@ function closeNav() {
 
 
 
-
+</div>
 
 
 </body>
