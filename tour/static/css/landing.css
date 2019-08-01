@@ -4,6 +4,7 @@
 }
 html {
   overflow-x: hidden;
+  z-index: 1;
 }
 
 
@@ -86,6 +87,7 @@ h1 {
   padding-left: 30px;
 
 }
+
 
 b {
 	color: black;
@@ -661,7 +663,7 @@ padding-left: 60px;
   z-index: 1;*/
   top: 0;
   right: 0;
-  background-color: #241C3B;
+  background-color: white;/*#241C3B;*/
   transition: 0.5s;
   padding-top: 60px;
   overflow: scroll;
@@ -683,22 +685,42 @@ z-index: 999;
   color: #818181;
   display: block;
   transition: 0.3s;
+  
 }
-
+.D {
+  color: white;
+}
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
+pre {
+  position: fixed;
+  top: 0px;
+  right: 23px;
+  font-size: 75px;
+  width: 100%
+  height: auto;
+  
+  z-index: 10 !important;
+}
+.pre {
+  background-color: #241C3B;
+  color: white;
+}
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  left: -5px;
+  position: fixed;
+  top: -10px;
+  right: 20px;
   font-size: 35px;
-  margin-right: 50px;
+  z-index: 10 !important;
+
 
 
 }
+.colorHeader {
 
+  display: none;
+}
 #main {
   transition: margin-left .5s;
   /*padding: 16px;*/
@@ -942,7 +964,7 @@ z-index: 999;
   background-size: 120% 120%;
 }
 
-.card-object.flip-in.card-1,
+/*.card-object.flip-in.card-1,
 .card-object.flip-in.card-3 {
   -webkit-animation: flip-2-hor-top-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
           animation: flip-2-hor-top-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
@@ -957,7 +979,7 @@ z-index: 999;
 }
 .card-object.flip-out.card-2 {
   animation: flip-2-hor-bottom-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) reverse both;
-}
+}*/
 .card-object-hf .back {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
