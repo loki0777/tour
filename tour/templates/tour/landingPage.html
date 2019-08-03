@@ -10,6 +10,13 @@
 
 <link rel="stylesheet" href="{% static 'css/landing.css' %}">
 <link rel="stylesheet" href="{% static 'css/3dfooter.css' %}">
+<link rel="stylesheet" href="{% static 'css/animations.css' %}">
+
+<script src="{% static 'js/wow.min.js' %}"></script>
+		<script>
+              new WOW().init();
+        </script>
+
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -46,7 +53,7 @@
 <div id="main">
 <div class="CONTAINER">
 <div class="header" style="text-align: center;">
-	<div class="responsive bg-text typewriter">
+	<div class="responsive bg-text typewriter animated zoomIn">
 		<h1>TOUR BALI</h1>
 		<p class="ny" style="font-size: 15px;">With NYOMAN ZENG</p>
 	</div>
@@ -154,7 +161,7 @@
 
 
 <div class="container-fluid">
-	<div class="row">
+	<div class="row upss">
 
 <!-- 		<div class="col-sm-8" style="height: 260px; padding-right: 20px;">
 			
@@ -173,36 +180,140 @@
  -->
 
 
-		<div class="col-sm-8" style="font-family: Lato, Helvetica, Verdana, sans-serif;  font-size: 20px; line-height: 1.2;" >
-				
+<!-- card code -->
 
-			<div style="font-family: Lato, Helvetica, Verdana, sans-serif; background-color: #f1f1f1; border-radius: 20px; padding: 15px; text-align: center; padding-bottom: 10px; ">
-				<p style="line-height: 1.4;">Hi! I am Nyoman Zeng, your friendliest tour guide from Bali.<br>
+<!-- 		<div class="col-sm-8" style="font-family: Lato, Helvetica, Verdana, sans-serif;" >
+			
+
+<div class='cardd'>
+  <div class='card_left'>
+    <img src="{% static 'img/first.jpg' %}" style="object-fit: cover;">
+  </div>
+  <div class='card_right'>
+    <div class='card_right__details' style="padding: 10px; font-size: 18px; line-height: 1.4;">
+      <p style=" ">Hi! I am Nyoman Zeng, your friendliest tour guide from Bali.<br>
 				Need a comfortable car ride around Bali with stories of Rama and Sitta right at your car seat?
 					PLUS I can take Instagram and Facebook-worthy photos for you!</p>
-				<p>Contact me via:
-					<p><i style='font-size:22px' class='fas' >&#xf3fa;</i><a href="" class="B"> 6281337355072</a></p>
+				<p>Contact me via:</p>
+				<p><i style='font-size:22px;' class='fa' >&#xf095;</i><a href="" class="B" style="text-indent: 5px;"> 6281337355072</a></p>
 
-					<p><i style='font-size:20px' class='fas'>&#xf0e0;</i><a href="" class="B"> irinyoman0@gmail.com</a> </p>
+					<p><i style='font-size:20px' class='fas'>&#xf0e0;</i><a href="" class="B"> irinyoman0@gmail.com</a></p>
 
 					<p><i style="font-size:23px" class="fa">&#xf230;</i><a href="" class="B"> https://www.facebook.com/BaliTours-by-Nyoman-Zeng</a></p></p>
 
-			</div>
-		</div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+<br><br><br><br> -->
+
+
+<!-- card code -->
+
+
+			<!-- <div class="cardholders">
+				<div class="cards">
+					<p>Hi! I am Nyoman Zeng, your friendliest tour guide from Bali.
+					Need a comfortable car ride around Bali with stories of Rama and Sitta right at your car seat?
+					PLUS I can take Instagram and Facebook-worthy photos for you!</p>
+
+			<div class="col-sm-4" style="background-color: #041C3B; border-radius: 5px; height: 50px;"><p><i style='font-size:22px' class='fas' >&#xf3fa;</i><a href="" class="B"> 6281337355072</a></p></div>
+			<div class="col-sm-4" style="background-color: #6C1C3C; border-radius: 5px; height: 50px;">1</div>
+			<div class="col-sm-4" style="background-color: #83243B; border-radius: 5px; height: 50px;">1</div>
+
+
+				</div>
+			</div>	 -->
+			
+<!-- 			
+			  <div class="card">
+				    <div class="front">
+				      <div class="logo"><span></span></div>
+				    </div>
+				    <div class="back">
+				      <h1>Helen Parker<span>design <i>&</i> photography</span></h1>
+				      <ul>
+				        <li>+1-111-111-11-11</li>
+				        <li>my-email@email.com</li>
+				        <li>my-site.com</li>
+				        </ul>
+				    </div>
+				  </div> -->
+			
+<div class="col-sm-8 sam" style="font-family: Lato, Helvetica, Verdana, sans-serif;">
+    <div class='card_left'>
+        <img src="{% static 'img/first.jpg' %}" style="object-fit: cover;">
+        <br>
+        <br>
+        <br>
+    </div class="botyok">
+    <div class="botyok" style="font-family: Lato, Helvetica, Verdana, sans-serif;
+			box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55); background-color: #f1f1f1; border-radius: 20px; text-align: center; padding-bottom: 10px; font-size: 18px; ">
+        <p style="line-height: 1.4;">Hi! I am Nyoman Zeng, your friendliest tour guide from Bali.
+            <br> Need a comfortable car ride around Bali with stories of Rama and Sitta right at your car seat? PLUS I can take Instagram and Facebook-worthy photos for you!</p>
+
+        <p>Contact me via:
+            <p><i style='font-size:22px;' class='fas'>&#xf3fa;</i><a href="" class="B"> 6281337355072</a></p>
+
+            <p><i style='font-size:20px;' class='fas'>&#xf0e0;</i><a href="" class="B"> irinyoman0@gmail.com</a> </p>
+
+            <p><i style="font-size:23px; " class="fa">&#xf230;</i><a href="" class="B"> https://www.facebook.com/BaliTours</a></p>
+        </p>
+
+    </div>
+</div>
 
 			<div class="col-sm-2" style="text-align: right; padding-bottom: 10px; padding-left: 5px; padding-right: 5px">
-				<img src="{% static 'img/ima.png' %}" style="width: 100%; height: 260px; object-fit: cover; border-radius: 20px;">
+				<img src="{% static 'img/ima.png' %}" style="width: 100%; height: 260px; object-fit: cover; border-radius: 20px; box-shadow: 0px 20px 20px 3px rgba(0, 0, 0, 0.55);">
 			</div>
 
 			<div class="col-sm-2" style="text-align: right; padding-bottom: 10px padding-left: 5px; padding-right: 5px">
-				<img src="{% static 'img/zzz.jpg' %}" style="width: 100%; height: 260px; object-fit: cover; border-radius: 20px">
+				<img src="{% static 'img/zzz.jpg' %}" style="width: 100%; height: 260px; object-fit: cover; border-radius: 20px; box-shadow: 0px 20px 20px 3px rgba(0, 0, 0, 0.55);">
 			</div>
 
 	</div>
 </div>
 
+<br><br>
+<br><br>
 
-<div class="plex">	
+<div class="container-fluid">
+	<div class="abawt wow zoomIn">
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4"><h1>ABOUT</h1></div>
+			<div class="col-sm-4"></div>
+		</div>
+		
+	</div>
+	<br>
+
+
+	<div class="row wow zoomIn">
+
+		<div class="col-sm-2"></div>
+
+		<div class="col-sm-8 ee" style="">
+			<p>I am NYOMAN ZENG. You can call me NYOMAN.
+
+		<br>Did you know, in Balinese, NYOMAN means third child?<br>
+
+		I have been a tour guide and tourist driver for more than 8 years. 
+		I enjoy meeting people from around the world and getting to know their different cultures.  I believe that the best way my guests can experience Bali is by introducing them to our culture and tradition. To make my guests feel safe, I always take the time to explain the hotels and tourist spots. I can offer a comfortable car ride with music from your home and  stories for my home.</p>
+
+		<p>It is my pleasure to make you feel at home in Bali. You don't have to worry about me waiting - my hours for you are flexible and friendly. If you need a photographer, I can do that for you, too.
+
+		This has been a passion even with my 2 years experience in a cruise ship and 10 years experience in the hotel industry. I look forward to showing you the beauty that is my home, Bali.</p><br><br>
+		</div>
+	</div>
+
+	<div class="col-sm-2"></div>
+
+</div>
+
+
+<!-- <div class="plex">	
 		<div class="about2">
 			<img src="{% static 'img/first.jpg' %}" style="width: 190px; height: 220px; border-radius: 20px;" >
 		</div>
@@ -222,7 +333,7 @@
 
 	</div>
 
-</div>
+</div> -->
 
 
 
@@ -287,12 +398,16 @@
  -->
 
 <div class="backss">
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4 wow zoomIn"><h3 style="text-align: center; font-size: 30px;"><b style="color: black">GALLERY</b></h3></div>
+	<div class="col-sm-4"></div>
+</div>
 
-
-  <h3 style="text-align: center; font-size: 30px;"><b style="color: white">GALLERY</b></h3>
+  
 
 <div class="cards-wrapper">
-  <div class="card-wrapper">
+  <div class="card-wrapper wow zoomIn">
     <div class="card-1 card-object card-object-hf"><a class="face front" href="#">
         <div class="title-wrapper">
           <div class="title">BALI</div>
@@ -310,7 +425,7 @@
           </ul>
         </div></a></div>
   </div>
-  <div class="card-wrapper">
+  <div class="card-wrapper wow zoomIn">
     <div class="card-2 card-object card-object-hf"><a class="face front" href="#">
         <div class="title-wrapper">
           <div class="title">BALI</div>
@@ -328,7 +443,7 @@
           </ul>
         </div></a></div>
   </div>
-  <div class="card-wrapper">
+  <div class="card-wrapper wow zoomIn">
     <div class="card-3 card-object card-object-hf"><a class="face front" href="#">
         <div class="title-wrapper">
           <div class="title">BALI</div>
@@ -349,7 +464,7 @@
 </div>
 
 <div class="cards-wrapper">
-  <div class="card-wrapper">
+  <div class="card-wrapper wow zoomIn">
     <div class="card-4 card-object card-object-hf"><a class="face front" href="#">
         <div class="title-wrapper">
           <div class="title">BALI</div>
@@ -368,8 +483,8 @@
         </div></a></div>
   </div>
   <div class="card-wrapper">
-    <div class="card-5 card-object card-object-hf"><a class="face front" href="#">
-        <div class="title-wrapper">
+    <div class="card-5 card-object card-object-hf wow zoomIn"><a class="face front" href="#">
+        <div class="title-wrapper wow zoomIn">
           <div class="title">BALI</div>
           <div class="subtitle">felis catus</div>
         </div></a><a class="face back" href="#">
@@ -386,7 +501,7 @@
         </div></a></div>
   </div>
   <div class="card-wrapper">
-    <div class="card-6 card-object card-object-hf"><a class="face front" href="#">
+    <div class="card-6 card-object card-object-hf wow zoomIn"><a class="face front" href="#">
         <div class="title-wrapper">
           <div class="title">BALI</div>
           <div class="subtitle">felix pumus</div>
@@ -419,15 +534,15 @@
   <h2>SERVICES</h2>
   <ul>
     <li>
-      <span class="fa fa-code"></span>
+      <span class="fa fa-code wow zoomIn"></span>
 
       <h3>TOUR GUIDE</h3>
      
     </li>
-    <li><span class="fas fa-hotel"></span>
+    <li><span class="fas fa-hotel wow zoomIn"></span>
       <h3>HOTEL INQUIRY</h3>
     </li>
-    <li><span class="fas fa-car-side"></span>
+    <li><span class="fas fa-car-side wow zoomIn"></span>
       <h3>CA SERVICES</h3>
      </li>
 
