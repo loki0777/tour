@@ -8,7 +8,6 @@
 
 <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="{% static 'css/landing.css' %}">
 <link rel="stylesheet" href="{% static 'css/3dfooter.css' %}">
 <link rel="stylesheet" href="{% static 'css/animations.css' %}">
 <link rel="stylesheet" href="{% static 'css/bootstrap-social.css' %}">
@@ -25,6 +24,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
 
+<link rel="stylesheet" href="{% static 'css/mobile.css' %}">
 <link rel="stylesheet" href="{% static 'css/component.css' %}">
 <link rel="stylesheet" href="{% static 'css/3dfooter.css' %}">
 
@@ -45,7 +45,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+<link rel="stylesheet" href="{% static 'css/landing.css' %}">
 
 </head>
 <body>
@@ -58,16 +58,16 @@
 <div id="main">
 <div class="CONTAINER">
 <div class="header" style="text-align: center;">
-	<div class="responsive bg-text typewriter animated zoomIn">
+	<div class="bg-text animated zoomIn">
 		<h1>TOUR BALI</h1>
-		<p class="ny" style="font-size: 15px;">With NYOMAN ZENG</p>
+		<p class="ny">With NYOMAN ZENG</p>
 	</div>
 </div>
 
 
-<div class="navbar pp">
+<!-- <div class="navbar pp">
 	<a href="#" class="active">HOME</a>
-	<a href="{% static 'grid' %}">ABOUT</a>
+	<a href="#">ABOUT</a>
 	<a href="#">GALLERY</a>
 	<a href="#">SERVICES</a>
 	<a href="#"  onclick="openNav()">REVIEWS</a>
@@ -77,10 +77,42 @@
 	<a href="" class="right facebook"><i style="font-size:20px" class="fa">&#xf230;</i></a>
 </div>
 
+<span class="navTrigger" data-toggle="collapse" data-target="#collapseExample">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+ -->
 
+<div class="responsive navbar navbar-default navbar-fixed-top" role="navigation">
 
-
-
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     	
+    </div>
+    <div class="navbar-collapse collapse">
+    	<a href="#" class="active">HOME</a>
+		<a href="#">ABOUT</a>
+		<a href="#">GALLERY</a>
+		<a href="#">SERVICES</a>
+		<a href="#"  onclick="openNav()">REVIEWS</a>
+      <ul class="nav navbar-nav navbar-right">
+        <a href="" class="right phone"><i style='font-size:18px' class='fas t'>&#xf3fa;</i></a>
+		<a href="" class="right email"><i style='font-size:20px' class='fas'>&#xf0e0;</i></a>
+		<a href="" class="right facebook"><i style="font-size:20px" class="fa">&#xf230;</i></a>
+          
+       
+      </ul>
+    </div>
+  </div>
+  
+</div>
 
 
 
@@ -168,16 +200,30 @@
 
 		<div class="col-sm-8" >
 			<div class="teks">
-				<p style="line-height: 1.4;">Hi! I am Nyoman Zeng, your friendliest tour guide from Bali.
-                    <br> Need a comfortable car ride around Bali with stories of Rama and Sitta right at your car seat? PLUS I can take Instagram and Facebook-worthy photos for you!
-                </p>
+				<div class="row">
+					<div class="col-sm-12">
+						<p style="line-height: 1.4;">Hi! I am Nyoman Zeng, your friendliest tour guide from Bali.
+                  		  <br> Need a comfortable car ride around Bali with stories of Rama and Sitta right at your car seat? PLUS I can take Instagram and Facebook-worthy photos for you!
+               			</p>
+                	
+               			<p>Contact me via:</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-sm-12 T"><i style='font-size:13px; padding: 10px;' class='fas C'>&#xf3fa;</i><a href="" class="A">6281337355072</a>
 
-               	<p>Contact me via:
-                   	<p><i style='font-size:22px;' class='fas'>&#xf3fa;</i><a href="" class="B"> 6281337355072</a></p>
+					<i style='font-size: 13px; padding: 10px;' class='fas C'>&#xf0e0;</i><a href="" class="A">irinyoman0@gmail.com</a>
 
-                    <p><i style='font-size:20px;' class='fas'>&#xf0e0;</i><a href="" class="B"> irinyoman0@gmail.com</a> </p>
+					<i style="font-size:13px; padding: 10px;" class="fa C">&#xf230;</i><a href="" class="A">fb.com/BaliTours</a>
 
-                    <p><i style="font-size:23px; " class="fa">&#xf230;</i><a href="" class="B"> https://www.fb.com/BaliTours</a></p>
+				</div>
+
+
+                   	
+
+                    
+
+                   
                 </p>
 
 
@@ -188,11 +234,11 @@
 	</div>
 
 	<div class="col-sm-2" style="text-align: right; padding-bottom: 10px; padding-left: 5px; padding-right: 5px">
-    	<img src="{% static 'img/ima.png' %}" style="width: 100%; height: 260px; object-fit: cover; border-radius: 20px; box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.55);">
+    	<img src="{% static 'img/ima.png' %}" class="sidepic">
     </div>
 
     <div class="col-sm-2" style="text-align: right; padding-bottom: 10px padding-left: 5px; padding-right: 5px">
-        <img src="{% static 'img/zzz.jpg' %}" style="width: 100%; height: 260px; object-fit: cover; border-radius: 20px; box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.55);">
+        <img src="{% static 'img/zzz.jpg' %}" class="sidepic">
     </div>
 	
 </div>
@@ -215,8 +261,8 @@
 
 	<div class="row wow zoomIn">
 
-		<div class="col-sm-2"></div>
 
+		<div class="col-sm-2"></div>
 		<div class="col-sm-8 ee">
 			<p>I am NYOMAN ZENG. You can call me NYOMAN.
 
@@ -448,8 +494,9 @@
 
 
 
-        <div class="col-sm-3">
-        	<div class="middle">
+        <div class="col-sm-3 Iconss">
+        
+        		<div class="middle rap">
 			      <a class="bton" href="#">
 			        <i class="fab fa-facebook-f"></i>
 			      </a>
@@ -458,16 +505,18 @@
 			      <a class="bton" href="#">
 			        <i class="fas fa-envelope-square"></i>
 			      </a>
-			      
+			
 			      <a class="bton" href="#">
 			        <i class="fas fa-sms"></i>
 			      </a>
 			       <p style="text-align: center; color: gray; font-size: 10px;"> DISCLAIMER your Information will not be used except for contacting you.</p>
-   			</div>
+   				</div>
+       
+        	
 
         </div>
 
-         <div class="col-sm-4">
+         <div class="col-sm-4 contacttt">
         	<p style="color: white; font-size: 30px;" class="err">Contact me via:
                    	<p><i style='font-size:22px; color: white ' class='fas'>&#xf3fa;</i><a href="" class="B"> 6281337355072</a></p>
 
